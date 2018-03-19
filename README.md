@@ -1,11 +1,10 @@
-﻿<<<<<<< HEAD
 ### 两年前，小程序出来时，我并不感兴趣，因为那时我在学习Android，根本没时间去研究小程序，那时并不看好小程序，因为各种限制；时隔两年，小程序已经很火了，所以还是跟着时代走吧，不能局限于Android开发了，望大家多多关照！
   ---
 
 ## 一、截图如下：
 
-![image](../screenshots/1.jpg)
-![image](../screenshots/2.jpg)
+![image](https://github.com/zsml2016/wxProgram/blob/master/screenshots/1.jpg)
+![image](https://github.com/zsml2016/wxProgram/blob/master/screenshots/2.jpg)
 
 
 ## 二、微信小程序开发相关资料：
@@ -24,6 +23,15 @@
     * 微信小程序/wepy/图书商城
 * [wechat-app-mall:](https://github.com/EastWorld/wechat-app-mall)
     * 微信小程序商城，微信小程序微店
+
+
+
+
+
+
+
+
+
 
 
 

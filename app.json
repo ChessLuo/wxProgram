@@ -1,0 +1,38 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/other/other",
+    "pages/mine/mine"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#FF6699",
+    "navigationBarTitleText": "天眼狗",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#666"
+  },
+  "tabBar": {
+    "color": "#666666",
+    "selectedColor": "#FF6699",
+    "borderStyle": "black",
+    "list": [
+      {
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home_press.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "iconPath": "images/mine.png",
+        "selectedIconPath": "images/mine_press.png",
+        "pagePath": "pages/mine/mine",
+        "text": "关于我"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}

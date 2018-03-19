@@ -1,0 +1,64 @@
+<!--index.wxml-->
+<!--天气背景 bg 对应 wxss下的样式-->
+<!-- <image src="../../assets/day1.jpg" class="bg"></image> -->
+<!-- 背景图 -->
+<image src="../../images/duoyun.jpg" class="bg" style="background-color:#eee;">
+  <view class="container">
+    <!--城市天气信息-->
+    <view class="currentWeather">
+
+<!-- bindtap="chooseLocation" -->
+      <view class="city w"> 
+        <!-- <image src="../../images/map.png" class="imgLocation"></image> -->
+        {{curr_city}} {{curr_location}}
+        <!-- <view class="city w">{{street}}</view> -->
+      </view>
+      <view class="tempDiv">
+        <view class="temp w">{{now_tmp}}</view>
+        <view class="temp1 w">℃</view>
+      </view>
+      <view class="w">{{cond_txt}} | {{life_type}} </view>
+      <!-- <view class="w suggestion_txt">{{suggestion_txt}}</view> -->
+    </view>
+
+    <!--天气详情-->
+    <view class="weatherDetail">
+      <view class="center">
+        <view class="w">{{dir}}</view>
+        <view class="w">{{wind_dir}}</view>
+        <view class="w b f50">{{wind_sc}}级</view>
+      </view>
+      <view class="wline"></view>
+      <view class="center">
+        <view class="w">相对湿度</view>
+        <view class="w b f50">{{hum}}%</view>
+      </view>
+      <view class="wline"></view>
+      <view class="center">
+        <view class="w">体感温度</view>
+        <view class="w b f50">{{fl}}℃</view>
+      </view>
+    </view>
+  </view>
+</image>
+
+
+<view wx:for="{{daily_forecast}}" wx:key="this" wx:for-index="i" wx:for-item="item">
+  <view class="horizon forcast" style="font-size: 31rpx; ">
+    <!-- 日期显示判断 -->
+    <view class="item_temp" wx:if="{{i>=3}}">{{item.date}}</view>
+    <view class="item_temp" wx:else>{{day[i]}}</view>
+
+    <view class="horizon">
+      <!-- 图片区分白天黑夜 -->
+      <image class="img" src="../../images/icons/{{item.cond_code_d}}.png" wx:if="{{updateTime < 18}}"></image>
+      <image class="img" src="../../images/icons/{{item.cond_code_n}}.png" wx:else></image>
+      <!-- 天气情况 -->
+      <view class="item_temp" wx:if="{{item.cond_txt_d == item.cond_txt_n}}">{{item.cond_txt_d}}</view>
+      <view class="item_temp" wx:else>{{item.cond_txt_d}}转{{item.cond_txt_n}}</view>
+    </view>
+
+    <view class="item_temp">{{item.tmp_min}}/ {{item.tmp_max}}℃</view>
+  </view>
+
+</view>

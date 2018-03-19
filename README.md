@@ -3,8 +3,8 @@
 
 ## 一、截图如下：
 
-![image](https://github.com/zsml2016/wxProgram/blob/master/screenshots/1.jpg)
-![image](https://github.com/zsml2016/wxProgram/blob/master/screenshots/2.jpg)
+![](./screenshots/1.jpg)
+![](./screenshots/2.jpg)
 
 
 ## 二、微信小程序开发相关资料：

@@ -1,11 +1,17 @@
 // pages/mine/mine.js
+//获取应用实例
+var app = getApp();
 Page({
-
   /**
    * 页面的初始数据
    */
   data: {
-  
+    headImg:"../../images/dahai.jpg",
+    headTitle:"SuperLuo",
+    context:" 我刚接触微信小程序开发，很多地方都是模模糊糊的，愿大家多多指教！",
+    address:"深圳",
+    email:"superluo666@gmail.com",
+    github:"https://github.com/zsml2016"
   },
 
   /**

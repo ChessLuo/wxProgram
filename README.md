@@ -1,12 +1,7 @@
 ### 两年前，小程序出来时，我并不感兴趣，因为那时我在学习Android，根本没时间去研究小程序，那时并不看好小程序，因为各种限制；时隔两年，小程序已经很火了，所以还是跟着时代走吧！
   ---
 
-### 一、截图如下(第一张图是小米手机系统自带的天气预报页面；第二张是假的 哈哈哈)：
-
-![](./screenshots/1.jpg)![](./screenshots/2.jpg)
-
-
-### 二、微信小程序开发相关资料：
+### 微信小程序开发相关资料：
 
 * [小程序官方文档:](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=2018313)
     * 微信小程序开发离不了官方文档。
@@ -23,6 +18,16 @@
 * [wechat-app-mall:](https://github.com/EastWorld/wechat-app-mall)
     * 微信小程序商城，微信小程序微店
 
+
+
+
+
+### 本项目首页仿小米手机天气预报：
+
+![](./screenshots/1.png)
+
+### 添加个人中心：
+![](./screenshots/2.png)
 
 
 

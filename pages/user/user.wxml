@@ -1,0 +1,52 @@
+<!--pages/user/user.wxml-->
+<!-- header -->
+<view class='user-head'>
+  <image src='' class='mine-bg'></image>
+  <view class='user-head-pic-wrap'>
+    <image src='{{userInfo.avatarUrl}}' class='user-head-pic'></image>
+    <text class='user-name'>{{userInfo.nickName}}</text>
+    <view class='bind-status' id='bind' bindtap='bindClik'> 
+      <text class='in-txt'>{{bindStatusTxt}}</text>
+    </view>
+  </view>
+  
+</view>
+
+<!-- option-list -->
+<view class='option-cont'>
+  <navigator url='/pages/project/project' hover-class='navigator-hover'>
+    <view class='option-list'>
+      <view class='left-list'>
+        <image src='../../images/project.png'></image>
+        <text class='option-name'>Android项目明细</text>
+      </view>
+      <view class='right-list'>
+        <image src='../../images/enter-icon.png'></image>
+      </view>
+    </view>
+  </navigator>
+
+  <navigator url='/pages/whatAgent/whatAgent' hover-class='navigator-hover'>
+    <view class='option-list'>
+      <view class='left-list'>
+        <image src='../../images/project.png'></image>
+        <text class='option-name'>小程序项目明细</text>
+      </view>
+      <view class='right-list'>
+        <image src='../../images/enter-icon.png'></image>
+      </view>
+    </view>
+  </navigator>
+
+  <navigator url='/pages/mine/mine' hover-class='navigator-hover'>
+    <view class='option-list'>
+      <view class='left-list'>
+        <image src='../../images/project.png'></image>
+        <text class='option-name'>关于我</text>
+      </view>
+      <view class='right-list'>
+        <image src='../../images/enter-icon.png'></image>
+      </view>
+    </view>
+  </navigator>
+</view>

@@ -2,13 +2,14 @@
   "pages": [
     "pages/index/index",
     "pages/other/other",
-    "pages/mine/mine"
+    "pages/mine/mine",
+    "pages/user/user"
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#FF6699",
+    "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "天眼狗",
-    "navigationBarTextStyle": "white",
+    "navigationBarTextStyle": "black",
     "backgroundColor": "#666"
   },
   "tabBar": {
@@ -25,8 +26,8 @@
       {
         "iconPath": "images/mine.png",
         "selectedIconPath": "images/mine_press.png",
-        "pagePath": "pages/mine/mine",
-        "text": "关于我"
+        "pagePath": "pages/user/user",
+        "text": "个人中心"
       }
     ]
   },

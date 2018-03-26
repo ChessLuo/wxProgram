@@ -1,2 +1,16 @@
 <!--pages/mine/mine.wxml-->
-<text>我叫superluo，来自广东；刚接触微信小程序开发，很多地方都是模模糊糊的，愿大家多多指教！</text>
+<view class='mine'>
+  <view class='mine-head'>
+    <view class='mine-img'><image class='in-img' src='{{headImg}}'></image></view>
+    <view class='mine-title'>{{headTitle}}</view>
+  </view>
+  
+  <view class='mine-context'>{{context}}</view>
+  <view class='mine-tab'>
+    <view>联系我：</view>
+    <view>地址：{{address}}</view>
+    <view>邮箱：{{email}}</view>
+    <view>GitHub：{{github}}</view>
+  </view>
+  
+</view>

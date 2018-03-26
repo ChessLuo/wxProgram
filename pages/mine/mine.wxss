@@ -1,1 +1,33 @@
 /* pages/mine/mine.wxss */
+.mine{
+  width: 100%;
+  
+}
+.mine-head{
+  text-align: center;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+.mine-img{
+  display: block;
+  width: 100rpx;
+  height: 100rpx;
+  margin: 30rpx outo 0;
+  
+}
+.in-img{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}
+
+.mine-context{
+  text-indent: 2em;
+  margin: 0 24rpx;
+  line-height: 1.5;
+  margin-top: 30rpx;
+}
+.mine-tab{
+  margin: 30rpx 24rpx;
+}

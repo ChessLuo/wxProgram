@@ -43,6 +43,29 @@ App({
     console.log(msg)
   },
   globalData: {
-    userInfo: null
+    allInfo: null,
+    code: null
+  },
+  getUserInfo: function (cb) {
+    var that = this
+    if (that.globalData.allInfo) {
+      typeof cb == "function" && cb(that.globalData.allInfo, that.globalData.code)//如果参数cb的类型为函数，那么执行cb,获取用户信息；
+    } else {
+      //调用登录接口
+      wx.login({
+        success: function (result) {
+          console.log(result);
+          wx.getUserInfo({
+            success: function (res) {
+              console.log(res);
+              // that.globalData.userInfo = res.userInfo;
+              that.globalData.allInfo = res;
+              that.globalData.code = result.code;
+              typeof cb == "function" && cb(that.globalData.allInfo, that.globalData.code)//如果参数cb的类型为函数，那么执行cb,获取用户信息；
+            }
+          })
+        }
+      })
+    }
   }
 })
